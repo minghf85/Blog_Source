@@ -2,3 +2,54 @@ baseURL = 'https://example.org/'
 languageCode = 'zh-cn'
 title = "Ming's Blog"
 theme = "paper"
+[pagination]
+  pagerSize = 3
+
+[params]
+
+  # header social icons
+  github = 'minghf85'                 # github.com/YOUR_GITHUB_ID
+
+  # home page profile
+  avatar = 'https://avatars.githubusercontent.com/u/131931716?v=4'                 # gravatar email or image url
+  name = 'Ming'
+  bio = '真理倒悬于天际'
+
+
+  # misc
+  disableHLJS = false                        # disable highlight.js
+  disablePostNavigation = false              # disable post navigation
+  math = true                               # enable KaTeX math typesetting globally
+  localKatex = false                        # use local KaTeX js/css instead of CDN
+
+  # RTL supprot
+  direction = "rtl"                         # RTL support for Right-to-left languages
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 10
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+  # giscus
+[params.giscus]
+  repo = 'minghf85/Blog_Source'                 # see https://giscus.app for more details
+  repoId = 'R_kgDOOWqSPg'
+  category = 'Announcements'
+  categoryId = 'DIC_kwDOOWqSPs4Co7lq'
+  mapping = 'pathname'
+  theme = 'light'
+  lang = 'zh-CN'
+  
