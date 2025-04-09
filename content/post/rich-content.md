@@ -1,7 +1,7 @@
 +++
-author = "lee.so"
+author = "Ming"
 title = "Rich Content"
-date = "2019-03-10"
+date = "2025-04-09"
 description = "A brief description of Hugo Shortcodes"
 tags = [
     "shortcodes",

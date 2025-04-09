@@ -1,10 +1,11 @@
 +++
 title = "Contact"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
+description = "you can contact me by email"
+date = "2025-04-09"
 aliases = ["about-us", "about-hugo", "contact"]
-author = "lee.so"
+author = "Ming"
 +++
 
-- [github.com/nanxiaobei](https://github.com/nanxiaobei)
-- [lee.so](https://lee.so)
+- **Gmail**:foxmhy3@gmail.com
+- [Github](https://github.com/minghf85)
+
