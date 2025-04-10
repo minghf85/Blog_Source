@@ -28,7 +28,17 @@
   <meta name="description" content="Hugo Content 结构详解
 1. 目录结构
 Hugo的内容组织非常清晰，主要遵循以下结构：
- 2. 文章格式
+content/
+├── _index.md          # 首页内容
+├── about.md           # 关于页面
+├── post/              # 博客文章目录
+│   ├── _index.md      # 文章列表页
+│   ├── first-post.md  # 具体文章
+│   └── second-post.md
+└── projects/          # 项目展示目录
+    ├── _index.md      # 项目列表页
+    └── project1.md    # 具体项目
+2. 文章格式
 每篇文章都包含两个部分：
 
 Front Matter（前置元数据）
@@ -36,65 +46,16 @@ Front Matter（前置元数据）
 
 2.1 Front Matter 详解
 Front Matter 是文章开头的元数据部分，用 &#43;&#43;&#43; 或 --- 包裹。常用字段包括：
- 2.2 正文内容
-正文部分支持 Markdown 格式，可以包含：
-
-标题（# 一级标题）
-列表
-代码块
-图片
-表格
-链接
-
-3. 与 hugo.toml 的关联
-hugo.toml 是网站的配置文件，它定义了：
-
-网站的基本信息
-主题设置
-内容目录结构
-分页设置
-菜单配置
-
-例如：
- 4. 最佳实践
-
-
-文件命名：
-
-使用小写字母
-用连字符（-）分隔单词
-避免使用空格和特殊字符
-
-
-
-内容组织：
-
-按主题分类存放
-使用子目录管理相关文章
-保持目录结构清晰
-
-
-
-Front Matter：
-
-必填字段：title, date
-建议添加：description, tags
-可选字段：categories, draft
-
-
-
-图片管理：
-
-建议将图片放在 static 目录
-使用相对路径引用
-优化图片大小
-
-
-
-5. 常见问题
-
-
-文章不显示：" />
+&#43;&#43;&#43;
+title = &#34;文章标题&#34;
+date = &#34;2025-04-09&#34;
+description = &#34;文章描述&#34;
+tags = [&#34;标签1&#34;, &#34;标签2&#34;]
+categories = [&#34;分类1&#34;]
+draft = false
+&#43;&#43;&#43;
+2.2 正文内容
+正文部分支持 Markdown 格式，可以包含：" />
   <meta name="author" content="Ming" /><link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
   
@@ -256,10 +217,37 @@ Front Matter：
     <h1 class="my-0! pb-2.5">Explain Hugo-conten in One post</h1><div class="text-xs antialiased opacity-60"><time>Apr 9, 2025</time><span class="mx-1">&middot;</span>
       <span>Ming</span></div></header>
 
-  <section><h1 id="hugo-content-结构详解">Hugo Content 结构详解</h1>
+  <div class="toc mb-8 p-4 bg-black/[3%] rounded-lg dark:bg-white/[8%]">
+    <details open>
+      <summary class="font-bold mb-2">目录</summary><nav id="TableOfContents">
+  <ul>
+    <li><a href="#1-目录结构">1. 目录结构</a></li>
+    <li><a href="#2-文章格式">2. 文章格式</a>
+      <ul>
+        <li><a href="#21-front-matter-详解">2.1 Front Matter 详解</a></li>
+        <li><a href="#22-正文内容">2.2 正文内容</a></li>
+      </ul>
+    </li>
+    <li><a href="#3-与-hugotoml-的关联">3. 与 hugo.toml 的关联</a></li>
+    <li><a href="#4-最佳实践">4. 最佳实践</a></li>
+    <li><a href="#5-常见问题">5. 常见问题</a></li>
+    <li><a href="#6-总结">6. 总结</a></li>
+  </ul>
+</nav></details>
+  </div><section><h1 id="hugo-content-结构详解">Hugo Content 结构详解</h1>
 <h2 id="1-目录结构">1. 目录结构</h2>
 <p>Hugo的内容组织非常清晰，主要遵循以下结构：</p>
- <h2 id="2-文章格式">2. 文章格式</h2>
+<pre tabindex="0"><code>content/
+├── _index.md          # 首页内容
+├── about.md           # 关于页面
+├── post/              # 博客文章目录
+│   ├── _index.md      # 文章列表页
+│   ├── first-post.md  # 具体文章
+│   └── second-post.md
+└── projects/          # 项目展示目录
+    ├── _index.md      # 项目列表页
+    └── project1.md    # 具体项目
+</code></pre><h2 id="2-文章格式">2. 文章格式</h2>
 <p>每篇文章都包含两个部分：</p>
 <ol>
 <li>Front Matter（前置元数据）</li>
@@ -267,7 +255,15 @@ Front Matter：
 </ol>
 <h3 id="21-front-matter-详解">2.1 Front Matter 详解</h3>
 <p>Front Matter 是文章开头的元数据部分，用 <code>+++</code> 或 <code>---</code> 包裹。常用字段包括：</p>
- <h3 id="22-正文内容">2.2 正文内容</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#ae81ff">+++</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">title = &#34;文章标题&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">date = &#34;2025-04-09&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">description = &#34;文章描述&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">tags = [&#34;标签1&#34;, &#34;标签2&#34;]</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">categories = [&#34;分类1&#34;]</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">draft = false</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">+++</span>
+</span></span></code></pre></div><h3 id="22-正文内容">2.2 正文内容</h3>
 <p>正文部分支持 Markdown 格式，可以包含：</p>
 <ul>
 <li>标题（# 一级标题）</li>
@@ -287,7 +283,20 @@ Front Matter：
 <li>菜单配置</li>
 </ul>
 <p>例如：</p>
- <h2 id="4-最佳实践">4. 最佳实践</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">baseURL</span> = <span style="color:#e6db74">&#34;https://example.com&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;我的博客&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;my-theme&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">params</span>]
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;网站描述&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">author</span> = <span style="color:#e6db74">&#34;作者名&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[<span style="color:#a6e22e">menu</span>]
+</span></span><span style="display:flex;"><span>  [[<span style="color:#a6e22e">menu</span>.<span style="color:#a6e22e">main</span>]]
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">name</span> = <span style="color:#e6db74">&#34;首页&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">url</span> = <span style="color:#e6db74">&#34;/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">weight</span> = <span style="color:#ae81ff">1</span>
+</span></span></code></pre></div><h2 id="4-最佳实践">4. 最佳实践</h2>
 <ol>
 <li>
 <p><strong>文件命名</strong>：</p>
@@ -373,8 +382,8 @@ Front Matter：
       ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>All Style Test</span></a
     ><a
       class="justify-end pl-3 ltr:ml-auto rtl:mr-auto"
-      href="http://localhost:1313/post/rich-content/"
-      ><span>Rich Content</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+      href="http://localhost:1313/post/manim/basic-use/"
+      ><span>Manim Basic Use</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
     ></nav><div class="giscus mt-24"></div>
   <script
     src="https://giscus.app/client.js"

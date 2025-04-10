@@ -9,13 +9,6 @@
     <lastBuildDate>Wed, 09 Apr 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Placeholder Text</title>
-      <link>http://localhost:1313/post/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>All Style Test</title>
       <link>http://localhost:1313/post/all-style-test/</link>
       <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
@@ -30,32 +23,18 @@
       <description>&lt;h1 id=&#34;hugo-content-结构详解&#34;&gt;Hugo Content 结构详解&lt;/h1&gt;&#xA;&lt;h2 id=&#34;1-目录结构&#34;&gt;1. 目录结构&lt;/h2&gt;&#xA;&lt;p&gt;Hugo的内容组织非常清晰，主要遵循以下结构：&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;content/&#xD;&#xA;├── _index.md          # 首页内容&#xD;&#xA;├── about.md           # 关于页面&#xD;&#xA;├── post/              # 博客文章目录&#xD;&#xA;│   ├── _index.md      # 文章列表页&#xD;&#xA;│   ├── first-post.md  # 具体文章&#xD;&#xA;│   └── second-post.md&#xD;&#xA;└── projects/          # 项目展示目录&#xD;&#xA;    ├── _index.md      # 项目列表页&#xD;&#xA;    └── project1.md    # 具体项目&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;2-文章格式&#34;&gt;2. 文章格式&lt;/h2&gt;&#xA;&lt;p&gt;每篇文章都包含两个部分：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Front Matter（前置元数据）&lt;/li&gt;&#xA;&lt;li&gt;正文内容&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;21-front-matter-详解&#34;&gt;2.1 Front Matter 详解&lt;/h3&gt;&#xA;&lt;p&gt;Front Matter 是文章开头的元数据部分，用 &lt;code&gt;+++&lt;/code&gt; 或 &lt;code&gt;---&lt;/code&gt; 包裹。常用字段包括：&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;+++&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;title = &amp;#34;文章标题&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;date = &amp;#34;2025-04-09&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;description = &amp;#34;文章描述&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;tags = [&amp;#34;标签1&amp;#34;, &amp;#34;标签2&amp;#34;]&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;categories = [&amp;#34;分类1&amp;#34;]&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;draft = false&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;+++&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;22-正文内容&#34;&gt;2.2 正文内容&lt;/h3&gt;&#xA;&lt;p&gt;正文部分支持 Markdown 格式，可以包含：&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Rich Content</title>
-      <link>http://localhost:1313/post/rich-content/</link>
+      <title>Manim Basic Use</title>
+      <link>http://localhost:1313/post/manim/basic-use/</link>
       <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/rich-content/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;&#xA;&lt;h2&gt;&lt;/h2&gt;</description>
+      <guid>http://localhost:1313/post/manim/basic-use/</guid>
+      <description></description>
     </item>
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>http://localhost:1313/post/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/markdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Math Typesetting</title>
-      <link>http://localhost:1313/post/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/math-typesetting/</guid>
-      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Emoji Support</title>
-      <link>http://localhost:1313/post/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+      <title>Manim Quick Start</title>
+      <link>http://localhost:1313/post/manim/quick-start/</link>
+      <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/manim/quick-start/</guid>
+      <description>&lt;h2 id=&#34;manim-and-manimgl&#34;&gt;Manim And Manimgl&lt;/h2&gt;&#xA;&lt;p&gt;Manim is a package created by 3Blue1Brown.&lt;br&gt;&#xA;We can use it to create some fluent and awesome animation by python coding.&lt;br&gt;&#xA;There are two main versions,Manim(Community),Manimgl(base on opengl).&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 比较两者&#xA;This series is for manimgl.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;</description>
     </item>
   </channel>
 </rss>
