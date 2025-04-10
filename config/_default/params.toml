@@ -53,6 +53,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   layoutBackgroundBlur = true # only used when layout equals background
 
 [article]
+  showComments = true
   showDate = true
   showViews = false
   showLikes = false
