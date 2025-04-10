@@ -10,6 +10,7 @@ tags = [
     "js",
     "shortcodes"
 ]
+weight = 1
 +++
 
 # 标题1

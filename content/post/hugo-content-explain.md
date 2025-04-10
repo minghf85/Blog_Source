@@ -7,6 +7,7 @@ tags = [
     "hugo",
     "post"
 ]
+weight = 2
 +++
 
 # Hugo Content 结构详解

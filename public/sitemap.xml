@@ -2,8 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/post/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/post/all-style-test/</loc>
+    <lastmod>2025-04-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/hugo-content-explain/</loc>
+    <lastmod>2025-04-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2025-04-09T00:00:00+00:00</lastmod>
@@ -11,16 +14,10 @@
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-04-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/all-style-test/</loc>
-    <lastmod>2025-04-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/contact/</loc>
     <lastmod>2025-04-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/css/</loc>
-    <lastmod>2025-04-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/hugo-content-explain/</loc>
     <lastmod>2025-04-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/html/</loc>
@@ -76,6 +73,9 @@
   </url><url>
     <loc>http://localhost:1313/series/themes-guide/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/placeholder-text/</loc>
+    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
