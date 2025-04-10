@@ -130,8 +130,10 @@ $$
 : 另一个定义
 
 ## 视频嵌入
-
+**Youtube**
 {{< youtube dQw4w9WgXcQ >}}
+**bilibili**
+{{< bilibili BV1f7NSeGE7j>}}
 
 
 这个文档包含了Markdown的大部分常用语法，包括：
