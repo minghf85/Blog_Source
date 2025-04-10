@@ -8,8 +8,9 @@ tags = [
     "Math",
     "Visualization"
 ]
-series = ["Manim"]
 categories = ["Manim"]
+series = ["Manim"]
+series_order = 1
 +++
 
 ## Manim And Manimgl
