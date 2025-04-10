@@ -6,5 +6,5 @@ aliases = ["about-us", "about-hugo", "contact"]
 author = "Ming"
 +++
 
-**Learning everyday**
+**Learning everyday**  
 **Always find something new**
