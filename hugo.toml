@@ -7,6 +7,9 @@ enableEmoji = true
   pagerSize = 5
 
 [params]
+  # TOC settings
+  toc = true                    # 是否全局开启TOC
+  tocMinWordCount = 150         # 显示TOC所需的最小词数
 
   # header social icons
   github = 'minghf85'                 # github.com/YOUR_GITHUB_ID

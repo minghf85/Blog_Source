@@ -1,0 +1,30 @@
+.toc {
+  font-size: 0.9rem;
+}
+
+.toc #TableOfContents {
+  margin-top: 0.5rem;
+}
+
+.toc #TableOfContents ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.toc #TableOfContents > ul {
+  padding-left: 0;
+}
+
+.toc #TableOfContents a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.toc #TableOfContents a:hover {
+  color: #666;
+}
+
+.dark .toc #TableOfContents a:hover {
+  color: #999;
+} 

@@ -19,6 +19,18 @@
     {{- end -}}
   </header>
 
+  <!-- Table of Contents -->
+  {{- $showTOC := .Params.toc | default site.Params.toc -}}
+  {{- $wordCount := .WordCount -}}
+  {{- if and $showTOC (ge $wordCount site.Params.tocMinWordCount) .TableOfContents -}}
+  <div class="toc mb-8 p-4 bg-black/[3%] rounded-lg dark:bg-white/[8%]">
+    <details open>
+      <summary class="font-bold mb-2">目录</summary>
+      {{- .TableOfContents -}}
+    </details>
+  </div>
+  {{- end -}}
+
   <section>{{- .Content -}}</section>
 
   <!-- Post Tags -->
