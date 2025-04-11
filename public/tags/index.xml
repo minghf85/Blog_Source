@@ -7,7 +7,207 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2025 Ming</copyright>
-    <lastBuildDate>Wed, 09 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/tags/ai/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>AIFE</title>
+      <link>http://localhost:1313/tags/aife/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/aife/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>AIGC</title>
+      <link>http://localhost:1313/tags/aigc/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/aigc/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Coding</title>
+      <link>http://localhost:1313/tags/coding/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/coding/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Css</title>
+      <link>http://localhost:1313/tags/css/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/css/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>GPT-SoVits</title>
+      <link>http://localhost:1313/tags/gpt-sovits/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/gpt-sovits/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Html</title>
+      <link>http://localhost:1313/tags/html/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/html/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Japanese</title>
+      <link>http://localhost:1313/tags/japanese/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/japanese/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Js</title>
+      <link>http://localhost:1313/tags/js/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/js/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Kokoro</title>
+      <link>http://localhost:1313/tags/kokoro/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/kokoro/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Language</title>
+      <link>http://localhost:1313/tags/language/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/language/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Learning</title>
+      <link>http://localhost:1313/tags/learning/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/learning/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Live2d</title>
+      <link>http://localhost:1313/tags/live2d/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/live2d/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Ollama</title>
+      <link>http://localhost:1313/tags/ollama/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/ollama/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Project</title>
+      <link>http://localhost:1313/tags/project/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/project/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>STT</title>
+      <link>http://localhost:1313/tags/stt/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/stt/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>TTS</title>
+      <link>http://localhost:1313/tags/tts/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/tts/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>口语</title>
+      <link>http://localhost:1313/tags/%E5%8F%A3%E8%AF%AD/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/%E5%8F%A3%E8%AF%AD/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>日本語</title>
+      <link>http://localhost:1313/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/%E6%97%A5%E6%9C%AC%E8%AA%9E/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>桌宠</title>
+      <link>http://localhost:1313/tags/%E6%A1%8C%E5%AE%A0/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/tags/%E6%A1%8C%E5%AE%A0/</guid>
+      <description></description>
+      
+    </item>
     
     <item>
       <title>Animation</title>
@@ -30,31 +230,11 @@
     </item>
     
     <item>
-      <title>Css</title>
-      <link>http://localhost:1313/tags/css/</link>
-      <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/css/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Github</title>
       <link>http://localhost:1313/tags/github/</link>
       <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
       
       <guid>http://localhost:1313/tags/github/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>Html</title>
-      <link>http://localhost:1313/tags/html/</link>
-      <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
-      
-      <guid>http://localhost:1313/tags/html/</guid>
       <description></description>
       
     </item>
@@ -80,11 +260,11 @@
     </item>
     
     <item>
-      <title>Js</title>
-      <link>http://localhost:1313/tags/js/</link>
+      <title>Life</title>
+      <link>http://localhost:1313/tags/life/</link>
       <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/tags/js/</guid>
+      <guid>http://localhost:1313/tags/life/</guid>
       <description></description>
       
     </item>

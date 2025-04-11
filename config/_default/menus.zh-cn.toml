@@ -11,14 +11,19 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "文档"
-  pageRef = "post"
+  name = "推文"
+  pageRef = "/posts/"
   weight = 10
 
 [[main]]
-  name = "Manim"
-  pageRef = "categories/manim"
+  name = "项目"
+  pageRef = "/projects/"
   weight = 15
+
+[[main]]
+  name = "尝试"
+  pageRef = "/tries/"
+  weight = 20
 
 #[[main]]
 #  name = "示例"
@@ -76,6 +81,11 @@
    weight = 10
 
  [[footer]]
-   name = "作者"
-   pageRef = "authors"
+   name = "分类"
+   pageRef = "categories"
    weight = 20
+
+ [[footer]]
+   name = "系列"
+   pageRef = "series"
+   weight = 30

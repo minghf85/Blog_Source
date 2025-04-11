@@ -166,18 +166,24 @@
 
             
             <span class="logo object-scale-down object-left nozoom">
-                <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- 圆形容器 -->
-  <circle cx="100" cy="100" r="90" fill="none" stroke="#3498db" stroke-width="2"/>
-  
-  <!-- 波浪形状（使用clipPath限制在圆形内） -->
+                <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- 定义圆形裁剪路径 -->
   <defs>
     <clipPath id="circleClip">
       <circle cx="100" cy="100" r="90"/>
     </clipPath>
   </defs>
   
-  <!-- 波浪路径（使用动画） -->
+  <!-- 圆形背景图片（替换YOUR_IMAGE_URL为实际图片URL） -->
+  <image x="10" y="10" width="180" height="180" 
+         xlink:href="https://avatars.githubusercontent.com/u/131931716?v=4" 
+         clip-path="url(#circleClip)" 
+         preserveAspectRatio="xMidYMid slice"/>
+  
+  <!-- 圆形容器边框 -->
+  <circle cx="100" cy="100" r="90" fill="none" stroke="#3498db" stroke-width="2"/>
+  
+  <!-- 波浪形状 -->
   <path clip-path="url(#circleClip)" fill="#3498db" opacity="0.7">
     <animate attributeName="d" 
              dur="5s" 
@@ -200,7 +206,7 @@
              "/>
   </path>
   
-  <!-- 第二层波浪增强效果 -->
+  <!-- 第二层波浪 -->
   <path clip-path="url(#circleClip)" fill="#2980b9" opacity="0.5">
     <animate attributeName="d" 
              dur="7s" 
@@ -242,10 +248,10 @@
             
             
             
-  <a href="/post/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
     <p class="text-base font-medium" title="Posts">
-        文档
+        推文
     </p>
 </a>
 
@@ -253,10 +259,21 @@
 
             
             
-  <a href="/categories/manim/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <a href="/projects/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="Manim">
-        Manim
+    <p class="text-base font-medium" title="Projects">
+        项目
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/tries/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="Tries">
+        尝试
     </p>
 </a>
 
@@ -446,10 +463,10 @@
 
                     
   <li class="mt-1">
-    <a href="/post/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    <a href="/posts/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
         <p class="text-bg font-bg" title="Posts">
-            文档
+            推文
         </p>
     </a>
 </li>
@@ -461,10 +478,25 @@
 
                     
   <li class="mt-1">
-    <a href="/categories/manim/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    <a href="/projects/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="Manim">
-            Manim
+        <p class="text-bg font-bg" title="Projects">
+            项目
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/tries/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="Tries">
+            尝试
         </p>
     </a>
 </li>
@@ -720,16 +752,16 @@
 
 
 
-  <a class="flex flex-wrap article " href="/post/why-hugo&#43;github/">
+  <a class="flex flex-wrap article " href="/posts/why-hugo&#43;github/">
     
         
-        <div class="w-full md:w-auto h-full thumbnail nozoom thumbnailshadow md:mr-7" style="background-image:url(/img/featured.svg);"></div>
+        <div class="w-full md:w-auto h-full thumbnail nozoom thumbnailshadow md:mr-7" style="background-image:url(/img/rain.svg);"></div>
         
       <div class=" mt-3 md:mt-0">
       <div class="items-center text-left text-xl font-semibold">
         
         <div class="font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="/post/why-hugo&#43;github/">Why hugo+github</div>
+          href="/posts/why-hugo&#43;github/">Why hugo+github</div>
         
         
         
@@ -877,10 +909,18 @@
         </li>
         
         <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
-          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="/authors/"
-            title="Authors">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="/categories/"
+            title="Categories">
             
-            作者
+            分类
+          </a>
+        </li>
+        
+        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="/series/"
+            title="Series">
+            
+            系列
           </a>
         </li>
         

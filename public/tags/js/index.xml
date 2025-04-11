@@ -7,14 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <copyright>© 2025 Ming</copyright>
-    <lastBuildDate>Wed, 09 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/js/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>All Style Test</title>
-      <link>http://localhost:1313/post/all-style-test/</link>
+      <link>http://localhost:1313/posts/all-style-test/</link>
       <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/all-style-test/</guid>
+      <guid>http://localhost:1313/posts/all-style-test/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>PLLA的说明</title>
+      <link>http://localhost:1313/projects/plla/</link>
+      <pubDate>Fri, 11 Apr 2025 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/projects/plla/</guid>
       <description></description>
       
     </item>

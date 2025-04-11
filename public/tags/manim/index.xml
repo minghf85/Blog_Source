@@ -10,31 +10,31 @@
     <lastBuildDate>Wed, 09 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/manim/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Manim Basic Use</title>
-      <link>http://localhost:1313/post/manim/basic-use/</link>
+      <title>Manim</title>
+      <link>http://localhost:1313/tries/manim/</link>
       <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/manim/basic-use/</guid>
+      <guid>http://localhost:1313/tries/manim/</guid>
       <description></description>
-      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/post/manim/basic-use/featured.png" />
+      
     </item>
     
     <item>
-      <title>Manim</title>
-      <link>http://localhost:1313/post/manim/</link>
+      <title>Manim Basic Use</title>
+      <link>http://localhost:1313/tries/manim/basic-use/</link>
       <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/manim/</guid>
+      <guid>http://localhost:1313/tries/manim/basic-use/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Manim Quick Start</title>
-      <link>http://localhost:1313/post/manim/quick-start/</link>
+      <link>http://localhost:1313/tries/manim/quick-start/</link>
       <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/manim/quick-start/</guid>
+      <guid>http://localhost:1313/tries/manim/quick-start/</guid>
       <description></description>
       
     </item>

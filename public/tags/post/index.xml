@@ -11,10 +11,10 @@
     
     <item>
       <title>Explain Hugo-conten in One post</title>
-      <link>http://localhost:1313/post/hugo-content-explain/</link>
+      <link>http://localhost:1313/posts/hugo-content-explain/</link>
       <pubDate>Wed, 09 Apr 2025 00:00:00 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/hugo-content-explain/</guid>
+      <guid>http://localhost:1313/posts/hugo-content-explain/</guid>
       <description></description>
       
     </item>
