@@ -10,7 +10,6 @@ tags = [
 ]
 series = ["manim"]
 series_order = 2
-heroStyle = "thumbAndBackground"
 +++
 
 ## Manim的基础使用
