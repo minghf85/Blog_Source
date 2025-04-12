@@ -1,6 +1,6 @@
 var layouts = [
-  "background",
   "hero",
+  "background",
   "profile",
   "page",
   "card"
