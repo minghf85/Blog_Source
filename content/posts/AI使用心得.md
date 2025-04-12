@@ -46,8 +46,6 @@ weight = 3
 | LLM          | 语音对话 | 生图   | TTS     | STT         | 代码                | 文笔          |
 |--------------|----------|--------|---------|-------------|---------------------|---------------|
 | deepseek-r1  | sesame   | flux   | kokoro  | sensevoice   | claude 3.7 sonnet   | deepseek V3   |
-|--------------|----------|--------|---------|-------------|---------------------|---------------|
-| gpt-5-turbo  | whisper  | sdxl   | vits    | openai-asr  | github copilot x     | gpt-4         |
 
 ### 根据需求选择合适的AI
 
