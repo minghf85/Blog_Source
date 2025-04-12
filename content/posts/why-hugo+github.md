@@ -8,7 +8,7 @@ tags = [
     "github",
     "hugo"
 ]
-weight = 3
+weight = 5
 +++
 
 ## 为什么选择 Hugo + GitHub 来部署个人博客

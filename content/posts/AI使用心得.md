@@ -7,7 +7,8 @@ tags = [
     "AI",
     "life"
 ]
-weight = 1
+weight = 3
 +++
 
 # AI使用心得
+

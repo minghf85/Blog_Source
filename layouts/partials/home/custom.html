@@ -1,18 +1,23 @@
 {{ $jsHome := resources.Get "js/home.js" | resources.Minify | resources.Fingerprint "sha512" }}
-<div id="background">
-  {{ partial "partials/home/background.html" . }}
+<div id="background" style="display:none">
+  {{ partial "home/background.html" . }}
 </div>
-<div id="hero" style="display:none">
-  {{ partial "partials/home/hero.html" . }}
+<div id="hero">
+  {{ partial "home/hero.html" . }}
 </div>
 <div id="profile" style="display:none">
-  {{ partial "partials/home/profile.html" . }}
+  {{ partial "home/profile.html" . }}
 </div>
 <div id="card" style="display:none">
-  {{ partial "partials/home/card.html" . }}
+  {{ partial "home/card.html" . }}
 </div>
 <div id="page" style="display:none">
-  {{ partial "partials/home/page.html" . }}
+  {{ partial "home/page.html" . }}
+</div>
+<div class="flex justify-center mt-8">
+  <button id="switch-layout-button" class="px-4 py-2 bg-primary-600 text-white rounded hover:bg-primary-700">
+    切换样式<code id="layout">background</code>
+  </button>
 </div>
 <section>
   {{ partial "recent-articles-demo.html" . }}

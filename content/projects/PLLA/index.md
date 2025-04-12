@@ -16,6 +16,7 @@ tags = [
     "css",
     "js"
 ]
+weight = 2
 +++
 
 # PLLA (Personalized Language Learning Assistant)

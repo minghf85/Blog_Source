@@ -14,6 +14,7 @@ tags = [
     "GPT-SoVits",
     "ollama"
 ]
+weight = 1
 +++
 
 # AI 虚拟桌宠伙伴系统
