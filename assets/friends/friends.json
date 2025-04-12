@@ -11,6 +11,16 @@
       "description": "这是一个简单有趣的博客，来自个人开发者-minghf85"
     },
     {
+      "title": "n9o.xyz",
+      "url": "https://n9o.xyz",
+      "source": "https://github.com/nunocoracao/n9o.xyz",
+      "tags": [
+        "Personal site",
+        "Theme author"
+      ],
+      "description": "A personal site of blowfish-theme developer"
+    },
+    {
       "title": "madoke.org",
       "externalUrl": "https://madoke.org/",
       "source": "n/a",
