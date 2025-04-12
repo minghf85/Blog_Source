@@ -25,6 +25,11 @@
   pageRef = "/tries/"
   weight = 20
 
+[[main]]
+  name = "友链"
+  pageRef = "/friends/"
+  weight = 25
+
 #[[main]]
 #  name = "示例"
 #  weight = 20

@@ -8,5 +8,7 @@ tags : [
     "innovation",
     "idea"
 ]
+layoutBackgroundHeaderSpace: false
+cardViewScreenWidth: false
 categories : ["idea"]
 ---
