@@ -111,7 +111,7 @@
     "keywords": ["AI","life"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2"
+    "wordCount": "54"
   }]
   </script>
 
@@ -764,7 +764,7 @@
 <div class="flex flex-row flex-wrap items-center">
   
   
-  <time datetime="2025-04-09T00:00:00&#43;00:00">2025-04-09</time><span class="px-2 text-primary-500">&middot;</span><span>2 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
+  <time datetime="2025-04-09T00:00:00&#43;00:00">2025-04-09</time><span class="px-2 text-primary-500">&middot;</span><span>54 字</span><span class="px-2 text-primary-500">&middot;</span><span title="预计阅读">1 分钟</span><span class="px-2 text-primary-500">&middot;</span>
 
 
 <script type="text/javascript" src="/js/zen-mode.min.eea5245cf9244ecbdf2c150d1c8833226c1541cadf6e98f63a7c9192b1a3676df2c3ec603b14f4cfaaa53971fd9d8955640c0f405bf3de2b43ee7a5fb29ae721.js" integrity="sha512-7qUkXPkkTsvfLBUNHIgzImwVQcrfbpj2OnyRkrGjZ23yw&#43;xgOxT0z6qlOXH9nYlVZAwPQFvz3itD7npfsprnIQ=="></script>
@@ -988,7 +988,127 @@
   
   <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
     
-    
+     <div
+      class="order-first lg:ml-auto px-0 lg:order-last ltr:lg:pl-8 rtl:lg:pr-8">
+      <div class="toc ltr:pl-5 rtl:pr-5 print:hidden lg:sticky lg:top-[140px]">
+
+         <details open id="TOCView"
+  class="toc-right mt-0 overflow-y-scroll overscroll-contain scrollbar-thin scrollbar-track-neutral-200 scrollbar-thumb-neutral-400 dark:scrollbar-track-neutral-800 dark:scrollbar-thumb-neutral-600 rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 hidden lg:block">
+  <summary
+    class="block py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="min-w-[220px] py-2 border-dotted ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ai吗何时来的">AI吗，何时来的？</a></li>
+    <li><a href="#我是如何接触到ai的">我是如何接触到AI的？</a></li>
+    <li><a href="#我现在在用ai做什么">我现在在用AI做什么？</a></li>
+    <li><a href="#如何正确合理地使用ai">如何正确合理地使用AI？</a>
+      <ul>
+        <li><a href="#找到各个方向的sota-ai">找到各个方向的SOTA AI</a></li>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+<details class="toc-inside mt-0 overflow-hidden rounded-lg ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 lg:hidden">
+  <summary
+    class="py-1 text-lg font-semibold cursor-pointer bg-neutral-100 text-neutral-800 ltr:-ml-5 ltr:pl-5 rtl:-mr-5 rtl:pr-5 dark:bg-neutral-700 dark:text-neutral-100 lg:hidden">
+    目录
+  </summary>
+  <div
+    class="py-2 border-dotted border-neutral-300 ltr:-ml-5 ltr:border-l ltr:pl-5 rtl:-mr-5 rtl:border-r rtl:pr-5 dark:border-neutral-600">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ai吗何时来的">AI吗，何时来的？</a></li>
+    <li><a href="#我是如何接触到ai的">我是如何接触到AI的？</a></li>
+    <li><a href="#我现在在用ai做什么">我现在在用AI做什么？</a></li>
+    <li><a href="#如何正确合理地使用ai">如何正确合理地使用AI？</a>
+      <ul>
+        <li><a href="#找到各个方向的sota-ai">找到各个方向的SOTA AI</a></li>
+        <li></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</details>
+
+<script>
+
+  var margin = 200;
+  var marginError = 50;
+
+  (function () {
+    var $window = $(window);
+    var $toc = $('#TOCView');
+    var tocHeight = $toc.height();
+
+    function onResize() {
+      var windowAndMarginHeight = $window.height() - margin;
+      if(tocHeight >= windowAndMarginHeight) {
+        $toc.css("overflow-y", "scroll")
+        $toc.css("max-height", (windowAndMarginHeight + marginError) + "px")
+      } else {
+        $toc.css("overflow-y", "hidden")
+        $toc.css("max-height", "9999999px")
+      }
+    }
+
+    $window.on('resize', onResize);
+    $(document).ready(onResize);
+  })();
+
+
+
+  (function () {
+    var $toc = $('#TableOfContents');
+    if ($toc.length > 0) {
+      var $window = $(window);
+
+      function onScroll() {
+        var currentScroll = $window.scrollTop();
+        var h = $('.anchor');
+        var id = "";
+        h.each(function (i, e) {
+          e = $(e);
+          if (e.offset().top - $(window).height()/3 <= currentScroll) {
+            id = decodeURIComponent(e.attr('id'));
+          }
+        });
+        var active = $toc.find('a.active');      
+        if (active.length == 1 && active.eq(0).attr('href') == '#' + id) return true;
+
+        active.each(function (i, e) {
+           
+            $(e).removeClass('active').siblings('ul').hide();
+          
+        });
+        $toc.find('a[href="#' + id + '"]').addClass('active')
+        $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+          $(e).children('a').parents('ul').show();          
+        });
+      }
+
+      $window.on('scroll', onScroll);
+      $(document).ready(function () {
+         
+          $toc.find('a').parent('li').find('ul').hide();
+        
+        onScroll();
+      });
+    }
+  })();
+
+
+</script>
+   </div>
+      </div>
+      
 
       <div class="min-w-0 min-h-0 max-w-fit">
         
@@ -1008,6 +1128,128 @@
     </span>        
     
 </h1>
+
+
+<h2 class="relative group">AI吗，何时来的？ 
+    <div id="ai%E5%90%97%E4%BD%95%E6%97%B6%E6%9D%A5%E7%9A%84" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#ai%E5%90%97%E4%BD%95%E6%97%B6%E6%9D%A5%E7%9A%84" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p><code>AI</code>，全称Artificial Intelligence，意为人工智能，现在在大众的普遍认知下，特指大语言模型<code>LLM-Large Language Model</code>。
+基于<code>transformer</code>的预训练生成式大语言模型最早进入大众视野是2022年11月30日<code>chatgpt</code>的发布，注册账号就能使用。<br>
+不过由于<code>墙</code>的限制，当时我们了解有这个东西但无法方便地访问注册账号使用。
+这就同时导致国内一些收费镜像站的出现，不过还是没有大范围走到人民群众的视野里去。
+直到国内各大厂商开始发力，推出各自的<code>LLM</code>，显著降低了获取使用门槛，便逐渐开启了全民<code>AI</code>的时代。</p>
+
+
+<h2 class="relative group">我是如何接触到AI的？ 
+    <div id="%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E6%8E%A5%E8%A7%A6%E5%88%B0ai%E7%9A%84" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E6%8E%A5%E8%A7%A6%E5%88%B0ai%E7%9A%84" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>当然是随波逐流，跟风刷视频了解到的。&#x1f60e;<br>
+这是chatgpt发布后一个月内的一些b站视频，可以看到已经有很多人在基于chatgpt开发新东西了。
+
+    <figure>
+      <img class="my-0 rounded-md" loading="lazy" src="/img/chatgptsearch.png" alt="chatgptsearch" />
+      
+    </figure>
+
+现在去翻看一些评论区对于后面<code>AI</code>技术的幻想，有的都已经实现了！&#x1f44d;</p>
+
+
+<h2 class="relative group">我现在在用AI做什么？ 
+    <div id="%E6%88%91%E7%8E%B0%E5%9C%A8%E5%9C%A8%E7%94%A8ai%E5%81%9A%E4%BB%80%E4%B9%88" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%88%91%E7%8E%B0%E5%9C%A8%E5%9C%A8%E7%94%A8ai%E5%81%9A%E4%BB%80%E4%B9%88" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<ul>
+<li>写代码，<code>cursor</code>的<code>Agent</code>(<code>composer</code>)确实好用，不过太贵啦。</li>
+<li>写文章，说不定这篇文章就是生成的呢。</li>
+<li>学技术，新的技术直接叫AI生成例子，哪里有疑惑就问。</li>
+<li>学外语，一个随叫随到的学习伴侣有何不好。</li>
+<li>解惑idea，自己有一个idea不知道可行性，就直接问AI。</li>
+</ul>
+<p>已经离不开AI了。&#x1f62d;</p>
+
+
+<h2 class="relative group">如何正确合理地使用AI？ 
+    <div id="%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E5%90%88%E7%90%86%E5%9C%B0%E4%BD%BF%E7%94%A8ai" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E5%A6%82%E4%BD%95%E6%AD%A3%E7%A1%AE%E5%90%88%E7%90%86%E5%9C%B0%E4%BD%BF%E7%94%A8ai" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+
+
+<h3 class="relative group">找到各个方向的SOTA AI 
+    <div id="%E6%89%BE%E5%88%B0%E5%90%84%E4%B8%AA%E6%96%B9%E5%90%91%E7%9A%84sota-ai" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%E6%89%BE%E5%88%B0%E5%90%84%E4%B8%AA%E6%96%B9%E5%90%91%E7%9A%84sota-ai" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<p>要想用得好，底模就得选最好🤓，<code>SOTA</code>-State Of the Arts，在领域表现最好的model。
+这就不得不提xxx(广告位)</p>
+<hr>
+<p>以下是我整理的一些sota，结合了开源和快捷</p>
+<table>
+  <thead>
+      <tr>
+          <th>LLM</th>
+          <th>语音对话</th>
+          <th>生图</th>
+          <th>TTS</th>
+          <th>STT</th>
+          <th>代码</th>
+          <th>文笔</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>deepseek-r1</td>
+          <td>sesame</td>
+          <td>flux</td>
+          <td>kokoro</td>
+          <td>sensevoice</td>
+          <td>claude 3.7 sonnet</td>
+          <td>deepseek V3</td>
+      </tr>
+  </tbody>
+</table>
+
+
+<h3 class="relative group"> 
+    <div id="" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
 
           
           
