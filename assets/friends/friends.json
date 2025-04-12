@@ -12,8 +12,9 @@
     },
     {
       "title": "n9o.xyz",
-      "url": "https://n9o.xyz",
+      "externalUrl": "https://n9o.xyz",
       "source": "https://github.com/nunocoracao/n9o.xyz",
+      "avatar": "https://n9o.xyz/img/avatar.jpg",
       "tags": [
         "Personal site",
         "Theme author"
