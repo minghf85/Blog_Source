@@ -10,4 +10,7 @@ tags : [
 ]
 categories : ["manim"]
 ---
+
+{{< github repo="3b1b/manim">}}
+
 本节包含了我的manim学习历程

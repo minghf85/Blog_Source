@@ -1204,10 +1204,8 @@
     </span>        
     
 </h1>
-<a id="github-b52e71957fe215ae0180cbf8393ddc75" target="_blank" href="https://github.com/minghf85/AIFE" class="cursor-pointer">
-  <div
-    class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
-
+<a id="github-github-b52e71957fe215ae0180cbf8393ddc75" target="_blank" href="https://github.com/minghf85/AIFE" class="cursor-pointer">
+  <div class="w-full md:w-auto pt-3 p-5 border border-neutral-200 dark:border-neutral-700 border rounded-md shadow-2xl">
     <div class="flex items-center">
       <span class="text-2xl text-neutral-800 dark:text-neutral" style="margin-right:10px;">
         
@@ -1219,23 +1217,19 @@
 
 
       </span>
-      <div
-        id="github-b52e71957fe215ae0180cbf8393ddc75-full_name"
-        class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
+      <div id="github-github-b52e71957fe215ae0180cbf8393ddc75-name" class="m-0 font-bold text-xl text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral">
         minghf85/AIFE
       </div>
     </div>
 
-    <p id="github-b52e71957fe215ae0180cbf8393ddc75-description" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
+    <p id="github-github-b52e71957fe215ae0180cbf8393ddc75-desc" class="m-0 mt-2 text-md text-neutral-800 dark:text-neutral">
       AI 虚拟桌宠伙伴系统，将会持续更新
     </p>
 
     <div class="m-0 mt-2 flex items-center">
-
-      <span class="mr-1 inline-block h-3 w-3 rounded-full"
-        style="background-color: #3572A5"></span>
+      <span class="mr-1 inline-block h-3 w-3 rounded-full" style="background-color: #3572A5"></span>
       <div class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
-         Python 
+        Python
       </div>
 
       <span class="text-md mr-1 text-neutral-800 dark:text-neutral">
@@ -1247,7 +1241,7 @@
 
 
       </span>
-      <div id="github-b52e71957fe215ae0180cbf8393ddc75-stargazers" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+      <div id="github-github-b52e71957fe215ae0180cbf8393ddc75-stars" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
         8
       </div>
 
@@ -1260,29 +1254,65 @@
 
 
       </span>
-      <div id="github-b52e71957fe215ae0180cbf8393ddc75-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
+      <div id="github-github-b52e71957fe215ae0180cbf8393ddc75-forks" class="m-0 mr-5 text-md text-neutral-800 dark:text-neutral">
         2
       </div>
-
     </div>
-
   </div>
   <script>
-    fetch("https://api.github.com/repos/minghf85/AIFE", {
-      headers: new Headers({
-        'User-agent': 'Mozilla/4.0 Custom User Agent'
-      })
-    })
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('github-b52e71957fe215ae0180cbf8393ddc75-full_name').innerHTML = data.full_name;
-        document.getElementById('github-b52e71957fe215ae0180cbf8393ddc75-description').innerHTML = data.description;
-        document.getElementById('github-b52e71957fe215ae0180cbf8393ddc75-stargazers').innerHTML = data.stargazers_count;
-        document.getElementById('github-b52e71957fe215ae0180cbf8393ddc75-forks').innerHTML = data.forks;
-      })
-      .catch(error => console.error(error))
+    (function updateGithubData() {
+      const maxRetries = 3;
+      const retryDelay = 1000;
+
+      async function fetchWithRetry(url, retries = maxRetries) {
+        try {
+          const response = await fetch(url, {
+            headers: {
+              'Accept': 'application/vnd.github.v3+json',
+              'User-Agent': 'Mozilla/5.0 (compatible; Hugo/StaticSite)'
+            }
+          });
+          
+          if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+          }
+          
+          return await response.json();
+        } catch (error) {
+          if (retries > 0) {
+            await new Promise(resolve => setTimeout(resolve, retryDelay));
+            return fetchWithRetry(url, retries - 1);
+          }
+          throw error;
+        }
+      }
+
+      function updateUI(data) {
+        if (!data) return;
+        
+        const elements = {
+          name: document.getElementById('github-github-b52e71957fe215ae0180cbf8393ddc75-name'),
+          desc: document.getElementById('github-github-b52e71957fe215ae0180cbf8393ddc75-desc'),
+          stars: document.getElementById('github-github-b52e71957fe215ae0180cbf8393ddc75-stars'),
+          forks: document.getElementById('github-github-b52e71957fe215ae0180cbf8393ddc75-forks')
+        };
+
+        if (elements.name) elements.name.innerHTML = data.full_name || 'minghf85\/AIFE';
+        if (elements.desc) elements.desc.innerHTML = data.description || '';
+        if (elements.stars) elements.stars.innerHTML = data.stargazers_count || '0';
+        if (elements.forks) elements.forks.innerHTML = data.forks || '0';
+
+        
+        const card = document.getElementById('github-github-b52e71957fe215ae0180cbf8393ddc75');
+        if (card && data.html_url) {
+          card.href = data.html_url;
+        }
+      }
+    })();
   </script>
 </a>
+
+
 <p>本项目实现了一个基于AI的虚拟桌宠伙伴系统，结合了大型语言模型和语音合成技术，提供低延迟的实时对话体验，轻量化，全python。</p>
 
 
