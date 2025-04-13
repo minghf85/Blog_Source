@@ -19,6 +19,6 @@ cardViewScreenWidth: false
 
 {{< alert icon="fire" >}}
 
-**友情链接** 想要添加你的友情链接？ [来提交PR吧](https://github.com/minghf85/Blog_Source/assets/friends/friends.json).
+**友情链接** 想要添加你的友情链接？ [来提交PR吧](https://github.com/minghf85/Blog_Source/blob/main/assets/friends/friends.json).
 
 {{</ alert >}}
