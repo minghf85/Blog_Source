@@ -19,8 +19,9 @@ tags = [
 weight = 2
 +++
 
-# PLLA (Personalized Language Learning Assistant)
-{{< github repo="minghf85/PLLA" >}}
+# PLLA (Personalized Language Learning Assistant)  
+{{< github repo="minghf85/PLLA" >}}  
+
 PLLA 是一个可以免费、完全本地运行的个性化语言学习助手，它结合了 AI 对话、语音识别、语音合成等功能，为用户提供沉浸式的语言学习体验。
 
 ## 功能特点
