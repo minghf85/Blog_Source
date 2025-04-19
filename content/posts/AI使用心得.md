@@ -1,7 +1,7 @@
 +++
 author = "Ming"
 title = "AI-Just take it"
-date = "2025-04-09"
+date = "2025-04-15"
 description = "分享一下我自己使用ai的心得，以及一些方法"
 tags = [
     "AI",

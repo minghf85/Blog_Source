@@ -13,6 +13,8 @@ tags = [
 weight = 10
 +++
 
+{{< katex >}}
+
 # 标题1
 ## 标题2
 ### 标题3
@@ -98,9 +100,9 @@ console.log("Hello, World!");
 这是红色的HTML div内容。
 </div>
 
-## 数学公式（LaTeX）
+## 数学公式（KaTeX）
 
-行内公式：$E=mc^2$
+行内公式: \\(\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…\\)
 
 块级公式：
 $$
