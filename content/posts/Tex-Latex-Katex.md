@@ -8,7 +8,6 @@ tags = [
     "Tex",
     "Latex"
 ]
-weight = 1
 +++
 
 # TeX、LaTeX 和 KaTeX：排版系统的演进与应用

@@ -9,5 +9,4 @@ tags = [
     "blowfish",
     "blog"
 ]
-weight = 1
 +++

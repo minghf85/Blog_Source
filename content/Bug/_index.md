@@ -1,5 +1,5 @@
 ---
-title: "Bug&Fix"
+title: "Bug"
 description: "这是我遇到的一些bug和解决方法"
 date : "2025-04-28"
 cascade:

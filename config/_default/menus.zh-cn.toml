@@ -29,7 +29,12 @@
   name = "友链"
   pageRef = "/friends/"
   weight = 25
-
+  
+[[main]]
+  identifier = "bug"
+  pre = "bug"
+  url = "https://minghf85.github.io/categories/bug/"
+  weight = 30
 #[[main]]
 #  name = "示例"
 #  weight = 20

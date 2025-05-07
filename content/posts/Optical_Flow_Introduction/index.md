@@ -5,11 +5,15 @@ date = "2025-05-05"
 description = "光流估计介绍"
 tags = [
     "Optical Flow",
-    "CV",
-    "writing"
+    "CV"
 ]
-weight = 1
+categories = [
+    "CV"
+]
+weight = 2
 heroStyle = "thumbAndBackground"
+series = ["Optical Flow"]
+series_order = 1
 +++
 {{< katex >}}
 # 光流估计
@@ -163,3 +167,85 @@ When does Optical Flow estimation work?(可自行了解)
 ![Template Match](/img/Optical_Flow/TempMatch.png)
 原理：在一帧的图片中的一个小窗口T内，计算该窗口在另一帧中一个大一些的窗口S中和T相同大小窗口的相似度，找到最相似的窗口。  
 缺点：计算比较慢；也有可能会出现错误匹配。
+
+## 代码
+使用`Opencv`中的`calcOpticalFlowFarneback`函数实现`Lucas-Kanade`光流估计检测车辆运动。  
+每两秒重新检测角点，新的车辆进入画面也能检测到。   
+```python
+import cv2
+import numpy as np
+import time
+
+# 读取视频文件
+cap = cv2.VideoCapture('test.mp4')
+
+# 获取视频帧率（FPS）并计算2秒对应的帧数
+fps = cap.get(cv2.CAP_PROP_FPS)
+frames_per_3sec = int(fps * 2)  # 每2秒的帧数
+
+# LK光流参数
+lk_params = dict(
+    winSize=(15, 15),
+    maxLevel=2,
+    criteria=(cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 0.03)
+)
+
+# 随机颜色（用于绘制轨迹）
+color = np.random.randint(0, 255, (100, 3))
+
+# 初始化
+ret, old_frame = cap.read()
+old_gray = cv2.cvtColor(old_frame, cv2.COLOR_BGR2GRAY)
+p0 = cv2.goodFeaturesToTrack(old_gray, maxCorners=100, qualityLevel=0.3, minDistance=7, blockSize=7)
+mask = np.zeros_like(old_frame)
+
+frame_count = 0  # 帧计数器
+start_time = time.time()
+
+while True:
+    ret, frame = cap.read()
+    if not ret:
+        break
+
+    frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    frame_count += 1
+
+    # 每3秒强制重新检测角点
+    if frame_count % frames_per_3sec == 0:
+        p0 = cv2.goodFeaturesToTrack(frame_gray, maxCorners=100, qualityLevel=0.3, minDistance=7, blockSize=7)
+        mask = np.zeros_like(frame)  # 清空轨迹（可选）
+
+    # 计算光流
+    if p0 is not None and len(p0) > 0:
+        p1, st, err = cv2.calcOpticalFlowPyrLK(old_gray, frame_gray, p0, None, **lk_params)
+
+        # 筛选有效点
+        good_new = p1[st == 1]
+        good_old = p0[st == 1]
+
+        # 绘制轨迹
+        for i, (new, old) in enumerate(zip(good_new, good_old)):
+            a, b = new.ravel().astype(int)
+            c, d = old.ravel().astype(int)
+            mask = cv2.line(mask, (a, b), (c, d), color[i].tolist(), 2)
+            frame = cv2.circle(frame, (a, b), 5, color[i].tolist(), -1)
+
+        # 更新角点
+        p0 = good_new.reshape(-1, 1, 2)
+
+    # 显示结果
+    img = cv2.add(frame, mask)
+    cv2.imshow('LK Tracking (3s Reset)', img)
+
+    # 退出条件
+    if cv2.waitKey(30) & 0xFF == ord('q'):
+        break
+
+    # 更新前一帧
+    old_gray = frame_gray.copy()
+
+# 释放资源
+cap.release()
+cv2.destroyAllWindows()
+```
+结果如封面所示。
