@@ -143,3 +143,8 @@ When does Optical Flow estimation work?(可自行了解)
 适合做光流估计的情况：
 ![workfine](/img/Optical_Flow/workfine.png)
 纹理丰富的区域。
+
+## 由粗糙到精细
+
+### 问题
+如果两帧图片的像素有一个大的运动怎么办
