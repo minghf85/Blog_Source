@@ -9,11 +9,13 @@ tags = [
     "writing"
 ]
 weight = 1
+heroStyle = "thumbAndBackground"
 +++
 {{< katex >}}
 # 光流估计
 ## 参考
 - [哥伦比亚大学CV课程](https://www.youtube.com/watch?v=lnXFcmLB7sM)
+- [哥伦比亚大学CV课程东君中文讲解](https://www.bilibili.com/video/BV1Mc411i7WE)
 ## 介绍
 CV中有一种特征估计和学习的方法叫做Optical Flow-光流，通常是用于获取视频相邻帧的信息。  
 现在有的应用场景有：
@@ -147,4 +149,17 @@ When does Optical Flow estimation work?(可自行了解)
 ## 由粗糙到精细
 
 ### 问题
-如果两帧图片的像素有一个大的运动怎么办
+如果两帧图片的像素有一个大的运动怎么办?
+
+### 下采样
+![lowres](/img/Optical_Flow/lowres.png)
+
+两帧都下采样之后，像素的motion就会很小了，因为移动单位是看的像素点的位移格子个数。  
+然后就可以用之前的光流限制方程计算。  
+由图像金字塔的概念，逐层下采样和计算光流。  
+![Coarse-to-Fine Estimation Algorithm](/img/Optical_Flow/c2fe.png)
+其中\\((u,v)^{(n)}\\)即是真实分辨率的光流。
+### 模板匹配
+![Template Match](/img/Optical_Flow/TempMatch.png)
+原理：在一帧的图片中的一个小窗口T内，计算该窗口在另一帧中一个大一些的窗口S中和T相同大小窗口的相似度，找到最相似的窗口。  
+缺点：计算比较慢；也有可能会出现错误匹配。
