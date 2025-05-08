@@ -4,10 +4,15 @@
 [goldmark]
 [goldmark.renderer]
   unsafe = true
-
+[goldmark.extensions.passthrough]
+  enable = true
+  delimiters.block = [["\\[", "\\]"], ["$$", "$$"]]
+  # using $ as the inline-delimiter (optional, maybe)
+  delimiters.inline = [["\\(", "\\)"], ["$", "$"]]
 [highlight]
   noClasses = false
 
 [tableOfContents]
   startLevel = 2
   endLevel = 4
+

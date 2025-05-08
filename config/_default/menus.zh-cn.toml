@@ -33,7 +33,7 @@
 [[main]]
   identifier = "bug"
   pre = "bug"
-  url = "https://minghf85.github.io/categories/bug/"
+  url = "/categories/bug/"
   weight = 30
 #[[main]]
 #  name = "示例"

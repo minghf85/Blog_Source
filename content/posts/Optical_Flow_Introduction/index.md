@@ -109,22 +109,22 @@ $$
 
 $$
 \begin{bmatrix}
-I_x(1,1) & I_y(1,1) \\\\
-\vdots & \vdots \\\\
-I_x(k,l) & I_y(k,l) \\\\
-\vdots & \vdots \\\\
+I_x(1,1) & I_y(1,1) \\
+\vdots & \vdots \\
+I_x(k,l) & I_y(k,l) \\
+\vdots & \vdots \\
 I_x(n,n) & I_y(n,n)
 \end{bmatrix}
 \begin{bmatrix}
-u \\\\
+u \\
 v
 \end{bmatrix}
 = -
 \begin{bmatrix}
-I_t(1,1) \\\\
-\vdots \\\\
-I_t(k,l) \\\\
-\vdots \\\\
+I_t(1,1) \\
+\vdots \\
+I_t(k,l) \\
+\vdots \\
 I_t(n,n)
 \end{bmatrix}
 \tag{9}
