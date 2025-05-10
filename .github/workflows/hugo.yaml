@@ -30,7 +30,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           # github_token: ${{ secrets.GITHUB_TOKEN }} # For publishing to the same repository as the source, not for a different repository
-          personal_token: ${{ secrets.Personal_Blog }}
+          personal_token: ${{ secrets.BLOG_SOURCE }}
           external_repository: minghf85/minghf85.github.io # Set the target repository
           publish_dir: ./public
           publish_branch: main # Set the target branch
