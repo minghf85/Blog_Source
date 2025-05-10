@@ -56,9 +56,9 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 [article]
   showComments = true
   showDate = true
-  showViews = false
-  showLikes = false
-  showDateOnlyInArticle = false
+  showViews = true
+  showLikes = true
+  showDateOnlyInArticle = true
   showDateUpdated = false
   showAuthor = true
   # showAuthorBottom = false
@@ -126,13 +126,13 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
   cardViewScreenWidth = false
 
 [firebase]
-  # apiKey = "XXXXXX"
-  # authDomain = "XXXXXX"
-  # projectId = "XXXXXX"
-  # storageBucket = "XXXXXX"
-  # messagingSenderId = "XXXXXX"
-  # appId = "XXXXXX"
-  # measurementId = "XXXXXX"
+  apiKey = "AIzaSyDWvflPM1Tswo-t1mtY_4M248kpfbBmZjU"
+  authDomain = "hugo-views-likes.firebaseapp.com"
+  projectId = "hugo-views-likes"
+  storageBucket = "hugo-views-likes.firebasestorage.app"
+  messagingSenderId = "1036468904369"
+  appId = "1:1036468904369:web:fc55b2946850ddffb81d90"
+  measurementId = "G-GJXC5NHRHB"
 
 [fathomAnalytics]
   # site = "ABC12345"
@@ -166,3 +166,4 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 [rssnext]
   # feedId = ""
   # userId = ""
+
